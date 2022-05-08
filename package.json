@@ -1,0 +1,31 @@
+{
+  "name": "numwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "compile": "electron-builder"
+  },
+  "author": "Lylixn <46485459+Lylixn@users.noreply.github.com>",
+  "repository": "https://github.com/Lylixn/Numworks",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^18.2.0",
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "appId": "fr.anzen",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  }
+}
